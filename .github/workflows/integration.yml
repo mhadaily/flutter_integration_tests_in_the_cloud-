@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   Firebase_Test_Lab:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Setup Repo
         uses: actions/checkout@v2

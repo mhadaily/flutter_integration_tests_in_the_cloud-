@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.majidhajian.integration.integration_tests_in_the_cloud">
+    package="com.majidhajian.integration">
    <application
         android:label="integration_tests_in_the_cloud"
         android:icon="@mipmap/launcher_icon">

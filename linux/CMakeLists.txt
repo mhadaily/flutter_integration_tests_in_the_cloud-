@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "integration_tests_in_the_cloud")
-set(APPLICATION_ID "com.majidhajian.integration.integration_tests_in_the_cloud")
+set(APPLICATION_ID "com.majidhajian.integration")
 
 cmake_policy(SET CMP0063 NEW)
 

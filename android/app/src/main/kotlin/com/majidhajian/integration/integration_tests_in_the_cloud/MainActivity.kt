@@ -1,4 +1,4 @@
-package com.majidhajian.integration.integration_tests_in_the_cloud
+package com.majidhajian.integration
 
 import io.flutter.embedding.android.FlutterActivity
 

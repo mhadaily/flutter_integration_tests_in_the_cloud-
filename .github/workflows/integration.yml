@@ -1,12 +1,12 @@
-name: Cloud Integration Test 
+name: Cloud Integration Test
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@master
+      - uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
@@ -14,4 +14,4 @@ jobs:
       - name: Run Android integration tests
         run: ./android_integration.sh
       - name: Run iOS integration tests
-        run: ./ios_integration.sh
+        run: ./android_integration.sh

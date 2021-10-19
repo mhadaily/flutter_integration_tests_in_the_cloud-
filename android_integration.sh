@@ -5,9 +5,8 @@ flutter build apk
 ./gradlew app:assembleDebug -Ptarget=integration_test/app_test.dart
 popd
 
-gcloud auth activate-service-account --key-file=mj-coffee-9f1ef-ef6e938a5ce5.json
-
-gcloud --quiet config set project mj-coffee-9f1ef
+# gcloud auth activate-service-account --key-file=mj-coffee-9f1ef-ef6e938a5ce5.json
+# gcloud --quiet config set project mj-coffee-9f1ef
 
 gcloud firebase test android run --type instrumentation \
   --app build/app/outputs/apk/debug/app-debug.apk \

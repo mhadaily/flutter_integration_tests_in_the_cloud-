@@ -1,10 +1,24 @@
 name: Cloud Integration Test
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
-  Explore-GitHub-Actions:
+  Firebase_Test_Lab:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Setup Repo
+        uses: actions/checkout@v2
+      - name: Setup JaVa
+        uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v1
+        with:
+          channel: 'stable'
+      - name: Pub Get
+        run: flutter pub get
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@master
         with:
